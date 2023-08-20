@@ -4,6 +4,8 @@
  */
 package guiconvertidor;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author NAHUEL
@@ -72,7 +74,24 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String temp = jtTemperatura.getText();
         
+         try {
+            double grados = Double.parseDouble(temp);
+            double cuenta = grados * 9/5 + 32;
+            JOptionPane.showMessageDialog(null, "Grados convertidos en Fahrenheit:  " + cuenta + "°F");
+            jtTemperatura.setText("");
+            jtTemperatura.requestFocus();
+            
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Error. Ingrese un valor numerico valido.");
+            jtTemperatura.setText("");
+            jtTemperatura.requestFocus();
+        }
+      
+        //double grados = Double.parseDouble(temp);
+        //double cuenta = grados * 9/5 + 32;
+        //JOptionPane.showMessageDialog((this), "Grados convertidos en Fahrenheit: " + cuenta);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
