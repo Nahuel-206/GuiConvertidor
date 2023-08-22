@@ -28,16 +28,16 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        jConvertir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jtTemperatura = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("CONVERTIR");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jConvertir.setText("CONVERTIR");
+        jConvertir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jConvertirActionPerformed(evt);
             }
         });
 
@@ -51,7 +51,7 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(jConvertir)
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addComponent(jtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -65,14 +65,14 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(58, 58, 58)
-                .addComponent(jButton1)
+                .addComponent(jConvertir)
                 .addGap(106, 106, 106))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConvertirActionPerformed
         // TODO add your handling code here:
         String temp = jtTemperatura.getText();
         
@@ -92,7 +92,7 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
         //double grados = Double.parseDouble(temp);
         //double cuenta = grados * 9/5 + 32;
         //JOptionPane.showMessageDialog((this), "Grados convertidos en Fahrenheit: " + cuenta);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jConvertirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,7 +130,7 @@ public class ConvertidorTemperatura extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jConvertir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jtTemperatura;
     // End of variables declaration//GEN-END:variables
